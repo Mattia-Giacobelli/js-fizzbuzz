@@ -16,15 +16,19 @@ Tools:
 
 /*Create a loop to stamp numbers from 1 to 100 */
 
-for (let i = 1; i<=100; i++) {
-    console.log(i);
+for (let i = 1; i <= 100; i++) {
+    
 
-    //Stamp Fizz for multiples of 3
-    if (i % 3 ===0) {
-        console.log(i, 'Fizz');
+    //Stamp FizzBuzz for multiples of 3 and 5
+    if (i % 3 === 0 && i % 5 === 0){
+        console.log(i, 'FizzBuzz');
         
-    } 
-//Stamp Buzz for multiples of 5
-
-//Stamp FizzBuzz for multiples of 3 and 5
+    } else if (i % 5 === 0) {
+        //Stamp Buzz for multiples of 5
+        console.log(i, 'Buzz');
+        
+    }else if (i % 3 === 0) {
+        //Stamp Fizz for multiples of 3
+        console.log(i, 'Fizz');
+    }
 }
